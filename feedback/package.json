@@ -1,0 +1,8 @@
+{
+  "name": "feedback",
+  "version": "1.0.0",
+  "description": "A simple package for handling SGJourney Stargate feedback codes",
+  "main": "index.lua",
+  "author": "tehgreatdoge",
+  "license": "MIT"
+}
