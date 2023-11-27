@@ -4,6 +4,14 @@ local FeedbackType = {}
 FeedbackType.INFO = 0
 FeedbackType.ERROR = 1
 FeedbackType.MAJOR_ERROR = 2
+function FeedbackType.getName(enum)
+    for k,v in pairs(FeedbackType) do
+        if v == enum then
+            return k
+        end
+    end
+    return nil
+end
 
 local Feedback = {}
 Feedback.__index = Feedback
@@ -63,6 +71,23 @@ function FeedbackEnum.getName(enum)
         end
     end
     return nil
+end
+function FeedbackEnum.byCode(code)
+    for k,v in pairs(FeedbackEnum) do
+        if v.code == code then
+            return v
+        end
+    end
+    error("Unknown feedback code")
+end
+function FeedbackEnum.ofType(type)
+    local output = {}
+    for k,v in pairs(FeedbackEnum) do
+        if v.type == type then
+            table.insert(output,v)
+        end
+    end
+    return output
 end
 
 return {
