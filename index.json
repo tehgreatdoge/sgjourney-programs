@@ -2,6 +2,6 @@
   "version": 0,
   "packages": [
     "feedback",
-    "universalDialer"
+    "universal-dialer"
   ]
 }
