@@ -1,0 +1,8 @@
+{
+  "name": "universal-dialer",
+  "version": "1.0.0",
+  "description": "A simple package for dialing any SGJourney stargate",
+  "main": "index.lua",
+  "author": "tehgreatdoge",
+  "license": "MIT"
+}
